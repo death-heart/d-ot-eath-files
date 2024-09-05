@@ -1,0 +1,24 @@
+* {
+        border: none;
+        border-radius: 0;
+        font-family: JetBrainsMono;
+        font-size: 14px;
+        min-height: 0;
+}
+
+window#waybar  {
+        background: transparent;
+        color: black;
+}
+
+#tray,
+#clock,
+#cpu,
+#temperature,
+#memory {
+        padding:0.25rem 0.75rem;
+        margin: 1px 6px;
+        background-color: #D99FDB;
+        border-radius: 20px;
+	color: #25151e;
+}

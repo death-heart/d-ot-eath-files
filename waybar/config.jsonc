@@ -1,0 +1,33 @@
+{
+	"layer": "bottom",
+	"output": "DP-3",
+        "modules-left": ["user","tray"],
+        "modules-center": ["clock"],
+        "modules-right": ["cpu","temperature","memory"],
+	"clock": {
+                "format": "{:%I:%M %p}",
+                "tooltip-format": "<tt><small>{calendar}</small></tt>",
+                "on-scroll": 1,
+                "calendar": {
+                        "format":{
+				"months":     "<span color='#ffead3'><b>{}</b></span>",
+                                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+				}
+                        }
+                },
+	"memory": {
+                "format": " :{used:0.1f}G/{total:0.1f}G"
+                },
+        "cpu": {
+                "format": " :{usage}%"
+                },
+        "temperature": {
+                "format": " :{temperatureC}°C"
+                },
+	"user": {
+		"icon": true
+		}
+}
