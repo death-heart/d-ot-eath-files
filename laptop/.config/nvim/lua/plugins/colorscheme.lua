@@ -6,13 +6,12 @@ return {
         config = function()
             require("tokyonight").setup({
                 transparent = true,
-                style = "day",
                 styles = {
                     sidebars = "transparent",
                     floats = "transparent",
                 }
             })
-            -- vim.cmd([[colorscheme tokyonight]])
+            vim.cmd([[colorscheme tokyonight]])
         end
     },
     {
@@ -23,7 +22,7 @@ return {
             require("gruvbox").setup({
                 transparent_mode = true
             })
-            vim.cmd([[colorscheme gruvbox]])
+            -- vim.cmd([[colorscheme gruvbox]])
         end
     }
 }
