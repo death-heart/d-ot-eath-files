@@ -6,7 +6,7 @@
         min-height: 0;
 }
 
-#waybar  {
+window#waybar  {
 	background: rgba(36, 39, 58, 0.3);
         color: black;
 }
@@ -16,4 +16,7 @@
     margin: 0 3px;
 }
 
-
+#workspaces button.active{
+    color: #9D81C6;
+    border-bottom: 4px solid #9D81C6;
+}
