@@ -1,11 +1,11 @@
 {
 	"layer": "bottom",
 	"output": "eDP-1",
-	"modules-left": ["tray", "hyprland/workspaces"],
-	"modules-center": ["clock"],
+	"modules-left": ["clock", "custom/weather"],
+	"modules-center": ["hyprland/workspaces"],
 	"modules-right": ["battery", "cpu", "memory", "network"],
 	"clock": {
-		"format": "{:%I:%M %p}",
+		"format": "{:%a %d, %b, %I:%M %p}",
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
 		"on-scroll": 1,
 		"calendar": {
@@ -39,5 +39,12 @@
 		"tooltip-format": "{signalStrength}%",
 		"format-disconnected": " X",
 		"tooltip-format-disconnected": "Disconnected"
-	}
+	},
+    "custom/weather": {
+        "format": "{}",
+        "tooltip": true,
+        "interval": 1800,
+        "exec": "$HOME/.config/waybar/scripts/wttr.py",
+        "return-type": "json"
+    }
 }

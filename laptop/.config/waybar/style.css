@@ -1,6 +1,5 @@
 * {
         border: none;
-        border-radius: 0;
         font-family: JetBrainsMono;
         font-size: 15px;
         min-height: 0;
@@ -11,12 +10,19 @@ window#waybar  {
         color: black;
 }
 
-#clock, #battery, #cpu, #memory, #temperature, #network {
+#clock, #battery, #cpu, #memory, #temperature, #network, #custom-weather {
     padding: 0 5px;
     margin: 0 3px;
 }
 
 #workspaces button.active{
-    color: #9D81C6;
-    border-bottom: 4px solid #9D81C6;
+    color: #C6A0F6;
+    background-color: #9D81C6;
+    border-radius: 30px;
 }
+
+#workspaces {
+    border-radius: 20px;
+    background-color: #C6A0F6; 
+}
+
