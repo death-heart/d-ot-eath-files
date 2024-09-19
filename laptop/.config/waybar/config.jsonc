@@ -3,9 +3,24 @@
 	"output": "eDP-1",
 	"modules-left": ["clock", "custom/weather"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["battery", "cpu", "memory", "network"],
+	"modules-right": ["group/settings", "group/hardware", "network"],
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "memory",
+            "battery",
+        ]
+    },
+    "group/settings": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "backlight",
+        ]
+    },
 	"clock": {
-		"format": "{:%a %d, %b, %I:%M %p}",
+		"format": "{:%b, %d %a, %I:%M %p}",
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
 		"on-scroll": 1,
 		"calendar": {
@@ -46,5 +61,16 @@
         "interval": 1800,
         "exec": "$HOME/.config/waybar/scripts/wttr.py",
         "return-type": "json"
+    },
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " ",
+        "format-icons": {
+            "default": ["", "", ""]
+        }
     }
 }
