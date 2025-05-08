@@ -18,6 +18,7 @@ return {
           {name = 'nvim_lsp'},
           {name = 'luasnip'},
           {name = 'buffer'},
+          {name = 'render-markdown'}
         },
         mapping = cmp.mapping.preset.insert({
           ['<C-Space>'] = cmp.mapping.complete(),
